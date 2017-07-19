@@ -1,0 +1,15 @@
+$header-text-color: #444;
+$background-color: #F2F2F2;
+$content-text-color: #444;
+$main-fontstack: "Raleway", "Open Sans", helvetica, arial, sans-serif;	
+$accent-color: #029eb4;
+
+
+body, html{
+	height: 100%;
+	font-family: "Open Sans", helvetica, arial, sans-serif;
+	background-color: $background-color;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
