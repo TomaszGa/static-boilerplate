@@ -1,0 +1,335 @@
+body, html {
+  height: 100%;
+  font-family: "Muli", "Roboto", "Gill Sans MT", "Gill Sans", helvetica, arial, sans-serif;
+  background-color: #ffffff;
+  color: #444;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400; }
+
+/* NAVIGATION */
+.navigation-main {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s;
+  display: flex; }
+
+.navigation-logo {
+  display: block;
+  height: 100%;
+  width: 500px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem; }
+
+.navigation-logo-alternate {
+  display: none;
+  height: 100%;
+  width: 500px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem; }
+
+.navigation-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0; }
+  .navigation-links li {
+    font-size: 1.5rem;
+    display: inline;
+    padding: 0 3rem;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .navigation-links a {
+    color: #f2f2f2;
+    transition: 1s;
+    border-top: 1px solid transparent; }
+  .navigation-links a:hover, .navigation-links a:active, .navigation-links a:focus {
+    color: #ef7c00; }
+
+.scrolled-nav {
+  position: fixed;
+  background-color: white;
+  transition: 0.8s;
+  border-bottom: 1px solid #ef7c00; }
+  .scrolled-nav .navigation-links {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+    .scrolled-nav .navigation-links a {
+      color: #222; }
+  .scrolled-nav .navigation-logo {
+    display: none; }
+  .scrolled-nav .navigation-logo-alternate {
+    display: block; }
+
+/* HEADER */
+main {
+  border-bottom: 1px solid #ef7c00; }
+
+.header-wrapper-simple {
+  min-height: 80vh; }
+
+.main-header {
+  width: 100%;
+  height: auto;
+  background: url(../img/header-hero-highres.jpg) center center;
+  background-size: cover;
+  repeat: no-repeat; }
+
+.header-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 15, 0.4); }
+
+.header-text-wrap {
+  margin-top: 200px;
+  padding: 0; }
+
+.header-text {
+  color: #ffffff; }
+
+.image-layout-header {
+  margin: 0 auto;
+  padding: 0;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center; }
+  .image-layout-header h2 {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    font-size: 2.4rem;
+    font-weight: 700; }
+  .image-layout-header h3 {
+    margin: 0.7rem 0;
+    font-size: 1.3rem;
+    font-weight: 400; }
+
+/* MAILCHIMP SIGNUP FORM*/
+/* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
+#mc_embed_signup form {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 10px 0 10px 3%; }
+
+#mc_embed_signup h2 {
+  font-weight: bold;
+  padding: 0;
+  margin: 15px 0;
+  font-size: 1.4em; }
+
+#mc_embed_signup input {
+  border: 1px solid #999;
+  -webkit-appearance: none; }
+
+#mc_embed_signup input[type=checkbox] {
+  -webkit-appearance: checkbox; }
+
+#mc_embed_signup input[type=radio] {
+  -webkit-appearance: radio; }
+
+#mc_embed_signup input:focus {
+  border-color: #333; }
+
+#mc_embed_signup .button {
+  clear: both;
+  background-color: #aaa;
+  border: 0 none;
+  border-radius: 4px;
+  letter-spacing: .03em;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+  transition: all 0.23s ease-in-out 0s; }
+
+#mc_embed_signup .button:hover {
+  background-color: #777; }
+
+#mc_embed_signup .small-meta {
+  font-size: 11px; }
+
+#mc_embed_signup .nowrap {
+  white-space: nowrap; }
+
+#mc_embed_signup .clear {
+  clear: none;
+  display: inline; }
+
+#mc_embed_signup label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: bold; }
+
+#mc_embed_signup input.email {
+  font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+  font-size: 15px;
+  display: block;
+  padding: 0 0.4em;
+  margin: 0 4% 10px 0;
+  min-height: 32px;
+  width: 58%;
+  min-width: 130px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+#mc_embed_signup input.button {
+  display: block;
+  width: 35%;
+  margin: 0 0 10px 0;
+  min-width: 90px; }
+
+#mc_embed_signup div#mce-responses {
+  float: left;
+  top: -1.4em;
+  padding: 0em .5em 0em .5em;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 5%;
+  clear: both; }
+
+#mc_embed_signup div.response {
+  margin: 1em 0;
+  padding: 1em .5em .5em 0;
+  font-weight: bold;
+  float: left;
+  top: -1.5em;
+  z-index: 1;
+  width: 80%; }
+
+#mc_embed_signup #mce-error-response {
+  display: none; }
+
+#mc_embed_signup #mce-success-response {
+  color: #529214;
+  display: none; }
+
+#mc_embed_signup label.error {
+  display: block;
+  float: none;
+  width: auto;
+  margin-left: 1.05em;
+  text-align: left;
+  padding: .5em 0; }
+
+.hero-form #mc_embed_signup, .faq-form #mc_embed_signup {
+  clear: left;
+  font-family: "Muli", "Roboto", "Gill Sans MT", "Gill Sans", helvetica, arial, sans-serif !important;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  width: 90%;
+  text-align: center !important;
+  background-color: transparent; }
+  .hero-form #mc_embed_signup h3, .faq-form #mc_embed_signup h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff; }
+  .hero-form #mc_embed_signup input, .faq-form #mc_embed_signup input {
+    text-align: center;
+    margin: 0 auto !important;
+    margin-bottom: 1rem !important;
+    margin-top: 0.3rem !important; }
+  .hero-form #mc_embed_signup form, .faq-form #mc_embed_signup form {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 !important;
+    text-align: center; }
+    .hero-form #mc_embed_signup form label, .faq-form #mc_embed_signup form label {
+      width: 100% !important;
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin: 0 auto;
+      margin-top: 1rem;
+      padding: 0; }
+
+.faq-form #mc_embed_signup form label {
+  color: #444; }
+
+#mce-EMAIL, #mce-email2 {
+  font-family: "Muli", "Roboto", "Gill Sans MT", "Gill Sans", helvetica, arial, sans-serif !important; }
+
+#mc-embedded-subscribe, #mc-embedded-subscribe2 {
+  background-color: #ef7c00 !important;
+  font-family: "Muli", "Roboto", "Gill Sans MT", "Gill Sans", helvetica, arial, sans-serif; }
+
+/* FAQ SECTION */
+.faq-content h1 {
+  margin-top: 2rem; }
+
+.faq-content h2 {
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+.faq-content p {
+  font-size: 1.2rem; }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -77px;
+  visibility: hidden; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  .navigation-links li {
+    padding: 0 2rem; } }
+
+@media screen and (max-width: 992px) {
+  .navigation-logo, .navigation-logo-alternate {
+    height: 100%;
+    width: 320px;
+    margin: 1.5rem 0;
+    margin-left: 0.5rem; }
+  .navigation-links {
+    margin: 1.5rem 0;
+    white-space: nowrap; }
+    .navigation-links li {
+      padding: 0 1.3rem;
+      font-size: 1rem; }
+  .main-header {
+    height: auto; }
+  .header-text-wrap {
+    margin-top: 120px; }
+  .anchor {
+    top: -72px; } }
+
+@media screen and (max-width: 650px) {
+  .navigation-main {
+    display: initial; }
+  .navigation-logo, .navigation-logo-alternate {
+    width: 500px;
+    height: 100%;
+    margin: 0.7rem auto; }
+  .navigation-links {
+    margin: 0 auto;
+    padding: 0;
+    width: 300px; }
+    .navigation-links li {
+      font-size: 1.3rem;
+      padding: 0 0.9rem; }
+  .hero-form #mc_embed_signup input {
+    width: 100%; }
+  .scrolled-nav .navigation-links {
+    margin: 0.7rem auto; }
+  .anchor {
+    top: -106px; } }
